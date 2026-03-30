@@ -2,7 +2,7 @@
 
 An open, free C++20 library for reading and writing [OGC CDB Version 2](https://docs.ogc.org/is/23-034/23-034.html) geospatial datastores.
 
-CDB (Common Database) is an OGC standard for organizing tiled geospatial data -- elevation, imagery, 3D models -- into a structured file hierarchy optimized for fast, reliable access by simulation and visualization systems.
+CDB is an OGC standard for organizing tiled geospatial data -- elevation, imagery, 3D models -- into a structured file hierarchy optimized for fast, reliable access by simulation and visualization systems.
 
 ## Features
 
