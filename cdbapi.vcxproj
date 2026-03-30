@@ -86,6 +86,9 @@
     <ClCompile Include="src\metadata\version_info.cc" />
     <ClCompile Include="src\metadata\dataset_metadata.cc" />
     <ClCompile Include="src\format\geotiff_writer.cc" />
+    <ClCompile Include="src\format\geopackage_writer.cc" />
+    <ClCompile Include="src\format\jpeg2000_writer.cc" />
+    <ClCompile Include="src\format\png_writer.cc" />
   </ItemGroup>
 
   <!-- Public headers -->
