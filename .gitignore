@@ -1,0 +1,29 @@
+# Build output
+build/
+out/
+x64/
+
+# vcpkg installed packages
+vcpkg_installed/
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+CMakeUserPresets.json
+cdbapi++.sln
+
+# Compiled artifacts
+*.exe
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+
+# Generated CDB datastores
+roundtrip_cdb/
+my_first_cdb/
+
+# OS files
+Thumbs.db
+Desktop.ini

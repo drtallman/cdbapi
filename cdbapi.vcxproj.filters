@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{10000001-0001-0001-0001-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tiling">
+      <UniqueIdentifier>{10000001-0001-0001-0001-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crs">
+      <UniqueIdentifier>{10000001-0001-0001-0001-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\path">
+      <UniqueIdentifier>{10000001-0001-0001-0001-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\metadata">
+      <UniqueIdentifier>{10000001-0001-0001-0001-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tiling">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\crs">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\coverage">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\format">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\metadata">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\path">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\link">
+      <UniqueIdentifier>{20000001-0001-0001-0001-000000000008}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="src\datastore.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application_profile.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiling\cdb1_global_grid.cc">
+      <Filter>src\tiling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiling\geocell.cc">
+      <Filter>src\tiling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiling\coalescence.cc">
+      <Filter>src\tiling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiling\tile_address.cc">
+      <Filter>src\tiling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crs\crs.cc">
+      <Filter>src\crs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\path\path_builder.cc">
+      <Filter>src\path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\path\naming_convention.cc">
+      <Filter>src\path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata\global_metadata.cc">
+      <Filter>src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata\version_info.cc">
+      <Filter>src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata\dataset_metadata.cc">
+      <Filter>src\metadata</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClInclude Include="include\cdbapi\cdbapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\datastore.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\application_profile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\tiling\tiling_scheme.h">
+      <Filter>include\tiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\tiling\cdb1_global_grid.h">
+      <Filter>include\tiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\tiling\geocell.h">
+      <Filter>include\tiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\tiling\tile_address.h">
+      <Filter>include\tiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\tiling\coalescence.h">
+      <Filter>include\tiling</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\crs\crs.h">
+      <Filter>include\crs</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\coverage\coverage.h">
+      <Filter>include\coverage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\coverage\coverage_metadata.h">
+      <Filter>include\coverage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\coverage\coverage_writer.h">
+      <Filter>include\coverage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\format\geotiff_writer.h">
+      <Filter>include\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\format\geopackage_writer.h">
+      <Filter>include\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\format\jpeg2000_writer.h">
+      <Filter>include\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\format\png_writer.h">
+      <Filter>include\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\metadata\global_metadata.h">
+      <Filter>include\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\metadata\dataset_metadata.h">
+      <Filter>include\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\metadata\version_info.h">
+      <Filter>include\metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\path\path_builder.h">
+      <Filter>include\path</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\path\naming_convention.h">
+      <Filter>include\path</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdbapi\link\link.h">
+      <Filter>include\link</Filter>
+    </ClInclude>
+  </ItemGroup>
+
+</Project>

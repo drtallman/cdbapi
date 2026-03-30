@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/tests/">
+    <Project Path="D:/dev/repos/cdbapi++/tests/cdbapi_tests.vcxproj" Id="b2c3d4e5-5555-6666-7777-888899990000">
+      <BuildDependency Project="D:/dev/repos/cdbapi++/cdbapi.vcxproj" />
+    </Project>
+  </Folder>
+  <Project Path="D:/dev/repos/cdbapi++/cdbapi.vcxproj" Id="a1b2c3d4-1111-2222-3333-444455556666" />
+</Solution>

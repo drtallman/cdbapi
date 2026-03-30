@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{A1B2C3D4-1111-2222-3333-444455556666}</ProjectGuid>
+    <RootNamespace>cdbapi</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VcpkgEnabled>true</VcpkgEnabled>
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
+  <!-- Debug|x64 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <!-- Release|x64 -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <!-- Common compiler settings -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <!-- Source files -->
+  <ItemGroup>
+    <ClCompile Include="src\datastore.cc" />
+    <ClCompile Include="src\application_profile.cc" />
+    <ClCompile Include="src\tiling\cdb1_global_grid.cc" />
+    <ClCompile Include="src\tiling\geocell.cc" />
+    <ClCompile Include="src\tiling\coalescence.cc" />
+    <ClCompile Include="src\tiling\tile_address.cc" />
+    <ClCompile Include="src\crs\crs.cc" />
+    <ClCompile Include="src\path\path_builder.cc" />
+    <ClCompile Include="src\path\naming_convention.cc" />
+    <ClCompile Include="src\metadata\global_metadata.cc" />
+    <ClCompile Include="src\metadata\version_info.cc" />
+    <ClCompile Include="src\metadata\dataset_metadata.cc" />
+    <ClCompile Include="src\format\geotiff_writer.cc" />
+  </ItemGroup>
+
+  <!-- Public headers -->
+  <ItemGroup>
+    <ClInclude Include="include\cdbapi\cdbapi.h" />
+    <ClInclude Include="include\cdbapi\datastore.h" />
+    <ClInclude Include="include\cdbapi\application_profile.h" />
+    <ClInclude Include="include\cdbapi\error.h" />
+    <ClInclude Include="include\cdbapi\tiling\tiling_scheme.h" />
+    <ClInclude Include="include\cdbapi\tiling\cdb1_global_grid.h" />
+    <ClInclude Include="include\cdbapi\tiling\geocell.h" />
+    <ClInclude Include="include\cdbapi\tiling\tile_address.h" />
+    <ClInclude Include="include\cdbapi\tiling\coalescence.h" />
+    <ClInclude Include="include\cdbapi\crs\crs.h" />
+    <ClInclude Include="include\cdbapi\coverage\coverage.h" />
+    <ClInclude Include="include\cdbapi\coverage\coverage_metadata.h" />
+    <ClInclude Include="include\cdbapi\coverage\coverage_writer.h" />
+    <ClInclude Include="include\cdbapi\format\geotiff_writer.h" />
+    <ClInclude Include="include\cdbapi\format\geopackage_writer.h" />
+    <ClInclude Include="include\cdbapi\format\jpeg2000_writer.h" />
+    <ClInclude Include="include\cdbapi\format\png_writer.h" />
+    <ClInclude Include="include\cdbapi\metadata\global_metadata.h" />
+    <ClInclude Include="include\cdbapi\metadata\dataset_metadata.h" />
+    <ClInclude Include="include\cdbapi\metadata\version_info.h" />
+    <ClInclude Include="include\cdbapi\path\path_builder.h" />
+    <ClInclude Include="include\cdbapi\path\naming_convention.h" />
+    <ClInclude Include="include\cdbapi\link\link.h" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+</Project>

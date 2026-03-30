@@ -1,0 +1,30 @@
+{
+  "name": "cdbapi",
+  "version": "0.1.0",
+  "description": "Open C++ library for reading and writing OGC CDB Version 2 datastores",
+  "dependencies": [
+    {
+      "name": "gdal",
+      "default-features": false,
+      "features": [
+        "curl",
+        "expat",
+        "geos",
+        "gif",
+        "jpeg",
+        "lerc",
+        "lzma",
+        "openjpeg",
+        "png",
+        "qhull",
+        "sqlite3",
+        "webp",
+        "zstd"
+      ]
+    },
+    "proj",
+    "pugixml",
+    "nlohmann-json",
+    "catch2"
+  ]
+}
